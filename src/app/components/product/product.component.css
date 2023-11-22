@@ -1,0 +1,11 @@
+.product img {
+    height: 300px;
+    width: 100%;
+    border-radius: 15px;
+}
+.product {
+    border-radius: 15px;
+}
+.finish {
+    border-bottom: 10px solid #fff;
+}

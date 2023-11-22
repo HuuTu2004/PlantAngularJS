@@ -1,0 +1,57 @@
+
+    <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-2 text-dark mb-4 animated slideInDown">Products</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a [routerLink]="['/']">Home</a></li>
+                    <!-- <li class="breadcrumb-item"><a href="#">Pages</a></li> -->
+                    <li class="breadcrumb-item text-dark" aria-current="page">Products</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+    
+    
+    <!-- Products Start -->
+    
+    
+    <div class="container finish pb-5">
+        <div class="container py-5">
+            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-medium fst-italic text-primary">Our Products</p>
+                <h1 class="display-6 ">Trees have a complex positive effect on the environment</h1>
+            </div>
+            <div class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.5s">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 product bg-light" *ngFor="let prod of products ">
+                <div class="store-item position-relative  text-center">
+                    <img class="img-fluid pt-3" src="assets/img/{{prod.img}}" alt="">
+                    <div class="p-4">
+                        <div class="text-center mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <h4 class="mb-3">{{prod.name}}</h4>
+                        <p>Aliqu diam amet diam et eos. Clita erat ipsum lorem erat ipsum lorem sit sed</p>
+                        <h4 class="text-primary">${{prod.price}}</h4>
+                    </div>
+                    <div class="store-overlay">
+                        <a [routerLink]="['/productDetail',prod.id]" class="btn btn-primary rounded-pill py-2 px-4 m-2">More Detail <i class="fa fa-arrow-right ms-2"></i></a>
+                        <a [routerLink]="['/cart']" (click)="addToCart(prod)" class="btn btn-dark rounded-pill py-2 px-4 m-2">Add to Cart <i class="fa fa-cart-plus ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    

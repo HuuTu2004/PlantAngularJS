@@ -1,0 +1,11 @@
+.store img {
+    height: 300px;
+    width: 100%;
+}
+.store .store-item {
+    background-color: #fff;
+    border-radius: 15px;
+}
+.store {
+    border-bottom: 10px solid #fff;
+}

@@ -1,0 +1,46 @@
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div class="container table-responsive">
+    <table class="table table-bordered table-hover table-responsive">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>price</th>
+                <th>Image</th>
+                <th>Quantity</th>
+            
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of cartItems ">
+                
+                <td>{{ item.name }}</td>
+                <td>Price: {{ item.price }}</td>
+                <td><img src="assets/img/{{item.img}}" alt="{{ item.name }}" width="60" /></td>
+                <td><input type="number" value="1" width="10px"></td>
+               
+                <td><button class="btn btn-danger" (click)="removeFromCartById(item.id)">delete</button>
+                    &nbsp;&nbsp;<button class=".buttonPay  btn btn-success" (click)="pay()">Pay </button>
+                </td>
+                
+            </tr>
+
+        </tbody>
+        <br>
+       
+       
+    </table>
+     
+ 
+    <br>
+</div>
+
+

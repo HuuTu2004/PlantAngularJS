@@ -1,0 +1,10 @@
+.about-us {
+    background-image: url('about7.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.about-us .grey {
+    background-color: rgba(128, 128, 128, 0.5);
+    color: aliceblue;
+}

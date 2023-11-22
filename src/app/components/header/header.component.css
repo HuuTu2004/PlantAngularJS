@@ -1,0 +1,12 @@
+.button {
+    border: none;
+    color: #fff;
+    margin-right: 5px;
+    margin-left: -15px;
+}
+.colornav {
+    background-color: #FF9933;
+}
+.img-fluid {
+    width:100px ;
+}

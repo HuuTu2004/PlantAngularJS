@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Cinnamon",
+      "price": 29.99,
+      "img" : "product4.jpg",
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "name": "Anise",
+      "price": 49.99,
+      "img" : "product1.jpg",
+      "quantity": 1
+    },
+    {
+      "id": 3,
+      "name": "Cardamom",
+      "price": 49.99,
+      "img" : "product2.jpg",
+      "quantity": 1
+    },
+    {
+      "id": 4,
+      "name": "Lime tree",
+      "price": 49.99,
+      "img" : "article.jpg",
+      "quantity": 1
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Category A"
+    },
+    {
+      "id": 2,
+      "name": "Category B"
+    }
+  ],
+  "users": [
+    {
+      "username": "minkaka",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "username": "mon",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "username": "ngockhai207",
+      "password": "ăâêô",
+      "id": 3
+    },
+    {
+      "username": "ngockhai207",
+      "password": "1234",
+      "id": 4
+    }
+  ]
+}
